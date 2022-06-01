@@ -7,8 +7,6 @@
     <title>Cars</title>
 </head>
 <body>
-<h1 th:text="${msg}"></h1>
-
 <th:block th:each="car:${cars}">
     <span th:text="${car.getBrand()}"></span>
     <span th:text="${car.getModel()}"></span>

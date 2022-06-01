@@ -2,10 +2,10 @@ package web.service;
 
 import web.model.Car;
 import web.repository.CarRepository;
-import web.repository.CarRepositoryStaticImplementation;
+import web.repository.CarRepositoryStaticImpl;
 
-public class CarServiceImplementation implements CarService {
-    CarRepository Repository = new CarRepositoryStaticImplementation();
+public class CarServiceImpl implements CarService {
+    CarRepository Repository = new CarRepositoryStaticImpl();
 
     @Override
     public Car[] GetCarsByCount(int count) {
